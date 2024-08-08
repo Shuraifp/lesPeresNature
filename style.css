@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-height: 100vh;
+  max-width: 100vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(240, 228, 212);
+}
+.hero-page{
+  width: 100%;
+  height: 850px; 
+  background-image: url(/assets/img/hero.jpeg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+.black-box{
+  top: 0;
+  width: 100vw;
+  height: 850px;
+  background-color: rgba(1, 3, 3, 0.356);
+  z-index: 10;
+}
+                                   /* navbar starts */
+.navbar{
+  top: 0;
+  font-weight: 500;
+  width: 100vw;
+  z-index: 30;
+}
+.line{
+  width: 100vw;
+  height: 1px;
+}
+.final-part :last-child{
+  background-color: rgb(128, 170, 89);
+}
+.toggle .bar{
+  height: 2px;
+  width: 10px;
+  background-color: white;
+  
+}
+.toggle{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(128, 170, 89);
+  gap: 4px;
+}
+.toggle-page{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(128, 170, 89);
+  display: none;
+  z-index: 100;
+}
+.toggle-page.active{
+  display: block;
+}
+.toggle-page.close{
+  display: none;
+}
+.toggle-page .center-part button{
+  color: rgb(128, 170, 89);
+  padding: 0 100px;
+}
+                                            /* navbar ends */
+
+                                            /* hero text starts*/
+.hero-text{
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  color: rgb(240, 228, 212);
+  z-index: 30;
+  max-height: 20px;
+}
+.hero-text .big{
+  max-width: 95vw;
+  font-weight: 700;
+  font-size: 68px;
+}
+.hero-text .small{
+  max-width: 80vw;
+  font-size: 35px;
+}
+                                          
+@media only screen and (max-width: 1320px){
+  .hero-page .navbar .ts,.ls{
+    display: none;
+  }
+  .hero-page .line{
+    display: none;
+  }
+  .hero-text .big{
+    max-width: 95vw;
+    font-weight: 500;
+    font-size: 58px;
+  }
+  .hero-text .small{
+    max-width: 80vw;
+    font-size: 25px;
+  }
+}
+@media(min-width: 1321px){
+  .hero-page .navbar .ms{
+    display: none;
+  }
+}
+/*                                    second page                        */
+.sec-page,.third-page{
+  background-color: rgb(240, 228, 212);
+  width: 100vw;
+  height: 94vh;
+  padding: 10px;
+}
+.sec-page h3{
+  color: rgb(128, 170, 89);
+}
+/*                                      third page                       */
+
+.third-page p:nth-child(1){
+  color: rgb(128, 170, 89);
+  font-weight: 600;
+  font-size: 43px;
+}
+.discover{
+  height: 200px;
+  background-color: white;
+}
+.plusBtn{
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: rgb(128, 170, 89);
+  position: relative;
+  bottom: 10px;
+}
+.discover span{
+  font-weight: 500;
+}
+.discover p{
+  font-weight: 700;
+  font-size: 37px;
+}
+.discover.active{
+  background-color: rgb(128, 170, 89);
+  color: white;
+}
+/*                                                  fourth page                                 */
+.fourth-page,.fifth-page, footer{
+  background-color: rgb(240, 228, 212);
+}
+#title{
+  color: rgb(128, 170, 89);
+}
+.menu-bar{
+  width: 100%;
+  height: auto;
+  background-color: rgb(128, 170, 89);
+  color: white;
+  padding: 20px;
+  list-style-type: none;
+}
+.club{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.club p{
+  margin: 0;
+}
+.menu-bar li{
+  margin-bottom: 8px;
+}
+.menu-bar li span{
+  margin: 0 20px;
+  font-size: 22px;
+}
+.menu-bar li p:nth-child(2){
+  font-size: 16px;
+}
+.menu-bar li p:nth-child(1){
+  font-weight: 150;
+}
+.img{
+  height: 100%;
+  padding-top: 74px;
+}
+.menu-img{
+  height: 943px;
+  width: 100%;
+  object-fit: cover;
+}
+/*                                               fifth page                  */
+.fifth-page .text{
+  color: rgb(128, 170, 89);
+  font-size: 28px;
+}
+/*                                                footer                       */
+footer{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.foot{
+  background-color: rgb(37, 28, 28);
+  padding: 80px 5px 50px;
+  position: absolute;
+  bottom: 30px;
+}
+.bottom{
+  height: 35px;
+  width: 100%;
+  background-color: rgb(75, 73, 73);
+}
+.hero-txt{
+  margin-left: 30px;
+}
+.leftcol p, .rightcol p{
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  .fourth-page p{
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .fourth-page p{
+    font-size: 36px;
+  }
+}
+@media (min-width: 1200px) {
+  .fourth-page p{
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .discover{
+    flex-direction: column-reverse;
+  }
+  .plusBtn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(77, 148, 77);
+  }
+  .discover span{
+    font-weight: 400;
+  }
+  .discover p{
+    font-weight: 400;
+    font-size: 24px;
+  }
+  .fourth-page p{
+    font-size: 26px;
+  }
+  .leftcol, .rightcol{
+    display: none;
+  }
+  .navigation span{
+    padding-left: 130px;
+    text-wrap: nowrap;
+  }
+}
