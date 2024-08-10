@@ -210,23 +210,12 @@ body::-webkit-scrollbar{
 }
 /*                                                footer                       */
 footer{
-  position: relative;
   height: 100vh;
   width: 100vw;
 }
 .foot{
   background-color: rgb(37, 28, 28);
   padding: 80px 5px 50px;
-  position: absolute;
-  bottom: 30px;
-}
-.bottom{
-  height: 35px;
-  width: 100%;
-  background-color: rgb(75, 73, 73);
-}
-.hero-txt{
-  margin-left: 30px;
 }
 .leftcol p, .rightcol p{
   font-size: 13px;
@@ -246,7 +235,7 @@ footer{
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .discover{
     flex-direction: column-reverse;
   }
@@ -268,9 +257,5 @@ footer{
   }
   .leftcol, .rightcol{
     display: none;
-  }
-  .navigation span{
-    padding-left: 130px;
-    text-wrap: nowrap;
   }
 }
